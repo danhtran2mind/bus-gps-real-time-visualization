@@ -5,32 +5,11 @@ This project brings the bustling streets of Rio de Janeiro to life, showcasing r
 ## 🏗️ Getting Started
 
 ### 1.  The Data 📊
-   - This project uses GPS data from Rio de Janeiro buses, available on Kaggle: [GPS data from Rio de Janeiro buses](https://www.kaggle.com/datasets/igorbalteiro/gps-data-from-rio-de-janeiro-buses)
+   - This project uses GPS data from Rio de Janeiro buses, available on Kaggle: [GPS data from Rio de Janeiro buses](https://www.kaggle.com/datasets/igorbalteiro/gps-data-from-rio-de-janeiro-buses).
    - Download and extract the data to the `data` folder within the project.
 
 ### 2. Libraries and Platform used.
 
-    - Kafka: Kafka enables rapid transmission of bus location updates, making the visualization truly dynamic.
-        - Producer (generate_bus.py): Sends simulated bus location data to a Kafka topic. The data is extracted and processed from the Rio de Janeiro bus dataset.
-        - Consumer (Flask Server): Listens to the specific Kafka topic, receiving the latest bus location updates in real-time.
-
-    - Flask: Creates a web service.
-        - Receives bus location updates from Kafka.
-
-        - Stores the latest data in memory.
-
-        - Serves the data to the frontend web application (the map).
-
-    - Leaflet: A powerful JavaScript library for creating interactive maps.
-        - Map Display: Leaflet renders the map on the frontend, providing the visual canvas for the bus locations.
-
-        - Data Visualization: It receives the bus location data from the Flask server and dynamically places markers on the map to represent the buses.
-
-        - User Interaction: Leaflet enables features like zooming, panning, and potentially adding additional map layers.
-    - Docker: A containerization platform that simplifies the creation, deployment, and running of applications in isolated environments (containers).
-        - Consistent Environment: Docker helps ensure that the application (Kafka, Flask, and the frontend) runs consistently across different machines and development setups.
-
-        - Deployment Simplification: It makes deployment easier, allowing you to package the entire application into a single container that can be easily deployed to different servers or cloud environments
 
 ### 3. Set up Kafka 
     Run the following command to start Kafka in Docker:
