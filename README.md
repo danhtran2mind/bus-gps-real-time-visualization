@@ -5,14 +5,13 @@ This project brings the bustling streets of Rio de Janeiro to life, showcasing r
 ## 🏗️ Getting Started
 
 ### 1.  The Data 📊
-   - This project uses GPS data from Rio de Janeiro buses, available on Kaggle: [https://www.kaggle.com/datasets/igorbalteiro/gps-data-from-rio-de-janeiro-buses](https://www.kaggle.com/datasets/igorbalteiro/gps-data-from-rio-de-janeiro-buses)
+   - This project uses GPS data from Rio de Janeiro buses, available on Kaggle: [GPS data from Rio de Janeiro buses](https://www.kaggle.com/datasets/igorbalteiro/gps-data-from-rio-de-janeiro-buses)
    - Download and extract the data to the `data` folder within the project.
 
 ### 2. Libraries and Platform used.
 
     - Kafka: Kafka enables rapid transmission of bus location updates, making the visualization truly dynamic.
         - Producer (generate_bus.py): Sends simulated bus location data to a Kafka topic. The data is extracted and processed from the Rio de Janeiro bus dataset.
-
         - Consumer (Flask Server): Listens to the specific Kafka topic, receiving the latest bus location updates in real-time.
 
     - Flask: Creates a web service.
