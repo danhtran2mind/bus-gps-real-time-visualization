@@ -42,23 +42,26 @@ A containerization platform that simplifies the creation, deployment, and runnin
 
   - Deployment Simplification: It makes deployment easier, allowing you to package the entire application into a single container that can be easily deployed to different servers or cloud environments.
 
-### 3. Set up Kafka
+### 3. Set up and Install
 
-Run the following command to start Kafka in Docker:
+#### 3.1. Set up Kafka
+- Install Docker through link document: [Install Docker Engine](https://docs.docker.com/engine/install/).
+
+
+- Run the following command to start Kafka in Docker:
 
  ```bash
  docker-compose -f docker-kafka.yml up
  ```
 
-### 4. Install dependencies
+#### 3.2. Install dependencies
 
 Install the required libraries:
 
  ```bash
  pip install -r requirements.txt
  ```
-
-### 5.  Run the application!
+### 4.  Run the application!
 
 - Start the Kafka producer (simulating bus movements based on the real data):
     
@@ -74,7 +77,7 @@ Install the required libraries:
 
   -  Open your web browser and surf to `http://127.0.0.1:5000` to see the magic happen! 🎉
 
-### 6. Demonstration
+### 5. Demonstration
 
 [![Demo](demo.gif)](https://github.com/danhtran8mind/bus-gps-real-time-visualization/blob/main/demo.gif)
 
