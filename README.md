@@ -79,7 +79,7 @@ Install the required libraries:
 
 ### 5. Demonstration
 
-[![Demo](demo.gif)](https://github.com/danhtran8mind/bus-gps-real-time-visualization/blob/main/demo.gif)
+[![Demo](demo.gif)](./demo.gif)
 
 ## 🧠 Behind the Scenes
 
